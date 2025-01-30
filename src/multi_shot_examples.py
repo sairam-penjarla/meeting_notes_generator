@@ -113,6 +113,44 @@ get_session_name_examples = [
     },
 ]
 
+shorter_transcript_prompt_examples = [
+    # Example 1
+    {
+        "role": "user",
+        "content": "Transcript: Sarah: Here is the revenue analysis for the quarter. Mike: We should consider some cost-cutting strategies. John: We need to focus on better expense tracking.",
+    },
+    {
+        "role": "assistant",
+        "content": """Sarah: Here is the revenue analysis for the quarter.
+Mike: We should consider some cost-cutting strategies.
+John: We need to focus on better expense tracking.
+""",
+    },
+    # Example 2
+    {
+        "role": "user",
+        "content": "Transcript: Jane: The design phase is progressing well. Alex: Here is the development timeline. Maria: This is the outline for the marketing campaign.",
+    },
+    {
+        "role": "assistant",
+        "content": """Jane: The design phase is progressing well.
+Alex: Here is the development timeline.
+Maria: This is the outline for the marketing campaign.
+""",
+    },
+    # Example 3
+    {
+        "role": "user",
+        "content": "Transcript: Alex: I will coordinate the logistics. Maria: We should include team-building activities.",
+    },
+    {
+        "role": "assistant",
+        "content": """Alex: I will coordinate the logistics.
+Maria: We should include team-building activities.
+""",
+    },
+]
+
 def get_examples(component):
     if component == "identify_participants":
         return identify_participants_examples
@@ -124,5 +162,8 @@ def get_examples(component):
         return write_action_items_examples
     elif component == "session_name":
         return get_session_name_examples
+    elif component == "shorter_transcript_prompt":
+        return shorter_transcript_prompt_examples
     else:
         return None
+

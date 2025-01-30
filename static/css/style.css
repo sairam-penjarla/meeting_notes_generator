@@ -615,3 +615,38 @@ padding: 50px;
 }
 .col1{}
 .col2{}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  display: none;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #0000;
+  border-right-color: #2ea597;
+  position: relative;
+  animation: l24 1s infinite linear;
+}
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+.loader:after {
+  animation-duration: 4s;
+}
+@keyframes l24 {
+  100% {transform: rotate(1turn)}
+}

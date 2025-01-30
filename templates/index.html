@@ -45,6 +45,7 @@
                         </button>
                   </div>
                   <div class="main-content">
+                        <div class="loader"></div>
                         <div class="file-upload-container" id="file-upload-container">
                               <div id="dropZone" class="drop-zone">
                                     <span class="upload-section-icon">
@@ -75,54 +76,112 @@
 
                         <div class="output-container" id="output-container">
                               <!-- Participants Section -->
-                               <div class="col1">
+                              <div class="col1">
                                     <div id="identifyParticipantsOutput" class="output-section">
-                                          <div class="section-title">
-                                                <span class="section-icon">
-                                                      <img class="section-icon-img" src="/static/images/users.svg" alt="Notes Icon" />
-                                                </span>
-                                                <div class="section-text">Participants</div>
+                                          <div class="section-header">
+                                                <div class="section-title">
+                                                      <span class="section-icon">
+                                                            <img class="section-icon-img" src="/static/images/users.svg" alt="Notes Icon" />
+                                                      </span>
+                                                      <div class="section-text">Participants</div>
+                                                </div>
+                                                <div class="copy-container" onclick="copyParticipants()">
+                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                                </div>
                                           </div>
+
                                           <div class="output-content message">
                                                 <ul class="participant-list"></ul>
                                           </div>
                                     </div>
-      
+
                                     <!-- Summary Section -->
                                     <div id="writeSummaryOutput" class="output-section">
-                                          <div class="section-title">
-                                                <span class="section-icon">
-                                                      <img class="section-icon-img" src="/static/images/notes-icon.svg" alt="Notes Icon" />
-                                                </span>
-                                                <div class="section-text">Summary</div>
+                                          <div class="section-header">
+                                                <div class="section-title">
+                                                      <span class="section-icon">
+                                                            <img class="section-icon-img" src="/static/images/notes-icon.svg" alt="Notes Icon" />
+                                                      </span>
+                                                      <div class="section-text">Summary</div>
+                                                </div>
+                                                <div class="copy-container" onclick="copyContent('writeSummaryOutput')">
+                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                                </div>
                                           </div>
+
                                           <div class="output-content message"></div>
                                     </div>
-                               </div>
-                               <div class="col2">
+                              </div>
+                              <div class="col2">
                                     <!-- Meeting Notes Section -->
                                     <div id="writeNotesOutput" class="output-section">
-                                          <div class="section-title">
-                                                <span class="section-icon">
-                                                      <img class="section-icon-img" src="/static/images/notebook-pen.svg" alt="Notes Icon" />
-                                                </span>
-                                                <div class="section-text">Notes</div>
+                                          <div class="section-header">
+                                                <div class="section-title">
+                                                      <span class="section-icon">
+                                                            <img class="section-icon-img" src="/static/images/notebook-pen.svg" alt="Notes Icon" />
+                                                      </span>
+                                                      <div class="section-text">Notes</div>
+                                                </div>
+                                                <div class="copy-container" onclick="copyContent('writeNotesOutput')">
+                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                                </div>
                                           </div>
+
                                           <div class="output-content message"></div>
                                     </div>
 
                                     <!-- Action Items Section -->
                                     <div id="writeActionItemsOutput" class="output-section">
-                                          <div class="section-title">
-                                                <span class="section-icon">
-                                                      <img class="section-icon-img" src="/static/images/list-check.svg" alt="Notes Icon" />
-                                                </span>
-                                                <div class="section-text">Action Items</div>
+                                          <div class="section-header">
+                                                <div class="section-title">
+                                                      <span class="section-icon">
+                                                            <img class="section-icon-img" src="/static/images/list-check.svg" alt="Notes Icon" />
+                                                      </span>
+                                                      <div class="section-text">Action Items</div>
+                                                </div>
+                                                <div class="copy-container" onclick="copyContent('writeActionItemsOutput')">
+                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                                </div>
                                           </div>
+
                                           <div class="output-content message"></div>
                                     </div>
-                               </div>
+                              </div>
                         </div>
+
+                        <script>
+                              function copyParticipants() {
+                                    const participants = document.querySelectorAll(".participant-list .participant-name");
+                                    let textToCopy = "## Participants\n";
+                                    participants.forEach((participant) => {
+                                          textToCopy += "- " + participant.textContent + "\n";
+                                    });
+                                    navigator.clipboard.writeText(textToCopy.trim());
+                              }
+
+                              function copyContent(sectionId) {
+                                    const section = document.querySelector(`#${sectionId}`);
+                                    const sectionTitle = section.querySelector(".section-text").textContent;
+                                    const listItems = section.querySelectorAll(".output-content.message ul li");
+
+                                    let textToCopy = `${sectionTitle}\n\n`; // Bold heading with extra space for readability
+
+                                    if (listItems.length > 0) {
+                                          listItems.forEach((item) => {
+                                                textToCopy += `• ${item.textContent}\n`; // Using • for bullet points
+                                          });
+                                    } else {
+                                          textToCopy += "(No content available)\n";
+                                    }
+
+                                    navigator.clipboard
+                                          .writeText(textToCopy.trim())
+                                          .then(() => {})
+                                          .catch((err) => {
+                                                console.error("Error copying text: ", err);
+                                          });
+                              }
+                        </script>
                   </div>
             </div>
             <script>

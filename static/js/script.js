@@ -2,7 +2,6 @@ let currentSessionId = null; // Initialize currentSessionId globally
 
 window.onload = function () {
       currentSessionId = null; // Reset session ID on page load
-
       // Hide the output-container and show the file-upload-container on load
       document.getElementById("output-container").style.display = "none";
       document.getElementById("file-upload-container").style.display = "grid";
@@ -19,6 +18,16 @@ function generateSessionId() {
             return v.toString(16);
       });
 }
+
+function showLoader() {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'block';
+  }
+  
+  function hideLoader() {
+      const loader = document.querySelector('.loader');
+      loader.style.display = 'none';
+  }
 
 document.querySelector(".new-session-button").addEventListener("click", function () {
       location.reload(); // Refresh the page
@@ -233,7 +242,7 @@ fileUpload.addEventListener("change", (e) => {
 
 async function handleFileUpload(file) {
       if (file) {
-            console.log("File uploaded:", file.name);
+            showLoader()
 
             // Create a FormData object
             const formData = new FormData();
@@ -263,42 +272,65 @@ async function handleFileUpload(file) {
 }
 
 async function uploadTranscript() {
+      showLoader()
       const fileInput = document.getElementById("fileUpload");
       const transcriptTextarea = document.getElementById("transcriptInput");
       let transcript = "";
-
+  
       if (fileInput.files.length > 0) {
-            const file = fileInput.files[0];
-            const formData = new FormData();
-            formData.append("file", file);
-
-            try {
-                  const response = await fetch("/read_transcript", {
-                        method: "POST",
-                        body: formData,
-                  });
-
-                  if (!response.ok) {
-                        alert("Failed to read transcript.");
-                        return;
-                  }
-
-                  const data = await response.json();
-                  transcript = data.transcript;
-            } catch (error) {
-                  console.error("Error uploading file:", error);
-                  alert("Error uploading file.");
+          const file = fileInput.files[0];
+          const formData = new FormData();
+          formData.append("file", file);
+  
+          try {
+              const response = await fetch("/read_transcript", {
+                  method: "POST",
+                  body: formData,
+              });
+  
+              if (!response.ok) {
+                  alert("Failed to read transcript.");
                   return;
-            }
+              }
+  
+              const data = await response.json();
+              transcript = data.transcript;
+          } catch (error) {
+              console.error("Error uploading file:", error);
+              alert("Error uploading file.");
+              return;
+          }
       } else if (transcriptTextarea.value.trim()) {
-            transcript = transcriptTextarea.value.trim();
+          transcript = transcriptTextarea.value.trim();
+  
+          try {
+              const response = await fetch("/process_transcript", {
+                  method: "POST",
+                  headers: {
+                      "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({ transcript: transcript }),
+              });
+  
+              if (!response.ok) {
+                  alert("Failed to process transcript.");
+                  return;
+              }
+  
+              const data = await response.json();
+              transcript = data.processed_transcript;
+          } catch (error) {
+              console.error("Error processing transcript:", error);
+              alert("Error processing transcript.");
+              return;
+          }
       } else {
-            alert("Please upload a file or paste a transcript.");
-            return;
+          alert("Please upload a file or paste a transcript.");
+          return;
       }
-
+  
       processTranscript(transcript);
-}
+  }
 
 async function updateSession(participants, summary, notes, actionItems, transcript, sessionIcon, sessionName) {
       try {
@@ -637,4 +669,6 @@ async function processTranscript(transcript) {
 
     // Update the session with session name
     await updateSession(participants, summary, notes, actionItems, transcript, sessionIcon, sessionName);
+
+    hideLoader()
 }

@@ -126,6 +126,34 @@ You are tasked with generating a concise and meaningful session name based on a 
 Product Launch Strategy
 """
 
+shorter_transcript_prompt = """
+### Task
+
+You are tasked with reducing the size of a given meeting or conversation transcript while preserving all key aspects of the conversation. Your response should be in the form of bullet points that capture the essence of the conversation.
+Make sure that you reduce the transcript into half of it's length.
+
+### Guidelines
+
+- **Bullet Points**: Capture the key points discussed in the conversation.  
+- Maintain clarity and conciseness while ensuring completeness.  
+- Do not include unnecessary details or filler words.  
+- No headings, titles, or subheadings.  
+- Ensure the reduced transcript is accurate and free of errors.
+- Make sure that you reduce the transcript into half of it's length.
+
+### Example Transcript
+
+*The team discussed the upcoming product launch and marketing strategy. John emphasized the need for a targeted email campaign, while Jane suggested creating a social media plan. The group agreed to focus on reaching a younger demographic and to have the marketing materials ready by next week.*
+
+### Output Format
+
+- Discussed product launch and marketing strategy.  
+- John emphasized the need for a targeted email campaign.  
+- Jane suggested creating a social media plan.  
+- Agreed to focus on reaching a younger demographic.  
+- Marketing materials to be ready by next week.  
+"""
+
 
 def get_prompt(component):
     if component == "identify_participants":
@@ -138,6 +166,8 @@ def get_prompt(component):
         instructions = write_action_items_prompt
     elif component == "session_name":
         instructions = session_name_prompt
+    elif component == "shorter_transcript_prompt":
+        instructions = shorter_transcript_prompt
     else:
         instructions = "Invalid component"
     

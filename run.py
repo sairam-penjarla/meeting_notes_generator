@@ -84,6 +84,22 @@ def update_session():
         print(traceback.format_exc())
         return jsonify({"error": "An internal server error occurred"}), 500
 
+@app.route('/process_transcript', methods=['POST'])
+def process_transcript():
+    try:
+        data = request.get_json()
+        if 'transcript' not in data:
+            return jsonify({"error": "No transcript provided in the request."}), 400
+        transcript = data.get('transcript')
+        processed_transcript = utils.process_transcript(transcript)
+        return jsonify({"processed_transcript": processed_transcript}), 200
+    except ValueError as e:
+        return jsonify({"error": str(e)}), 400
+    except Exception as e:
+        print("Error in process_transcript function:")
+        print(traceback.format_exc())
+        return jsonify({"error": "An unexpected error occurred.", "details": str(e)}), 500
+    
 @app.route('/read_transcript', methods=['POST'])
 def read_transcript():
     if 'file' not in request.files:
