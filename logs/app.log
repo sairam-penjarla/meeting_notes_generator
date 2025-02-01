@@ -1,0 +1,26 @@
+2025-02-01 14:23:37,165 - INFO - Connected to the database: sessions.db
+2025-02-01 14:23:37,165 - INFO - Creating tables if they don't exist...
+2025-02-01 14:23:37,182 - INFO - Tables created or already exist.
+2025-02-01 14:25:23,276 - INFO - Connected to the database: sessions.db
+2025-02-01 14:25:23,276 - INFO - Creating tables if they don't exist...
+2025-02-01 14:25:23,286 - INFO - Tables created or already exist.
+2025-02-01 14:25:44,766 - INFO - Connected to the database: sessions.db
+2025-02-01 14:25:44,767 - INFO - Creating tables if they don't exist...
+2025-02-01 14:25:44,767 - INFO - Tables created or already exist.
+2025-02-01 14:25:44,847 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.100:8000
+2025-02-01 14:25:44,847 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-01 14:25:47,132 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET / HTTP/1.1" 200 -
+2025-02-01 14:25:47,239 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 14:25:47,247 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-01 14:25:47,253 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,262 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/cloud-upload.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,269 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/upload.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,280 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,282 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,296 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 14:25:47,303 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,317 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
+2025-02-01 14:25:47,326 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/list-check.svg HTTP/1.1" 200 -

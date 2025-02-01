@@ -19,8 +19,6 @@ from src.prompt_templates import get_prompt
 
 load_dotenv()
 
-DATABRICKS_TOKEN = os.environ.get("DATABRICKS_TOKEN")
-DATABRICKS_HOST = os.environ.get("DATABRICKS_HOST")
 
 
 class Utilities:
@@ -29,7 +27,13 @@ class Utilities:
         self.config = get_config()
         self.session_utils = SessionUtilities()
 
-        self.client = OpenAI(api_key=DATABRICKS_TOKEN, base_url=DATABRICKS_HOST)
+        TOKEN = os.environ.get("TOKEN")
+        HOST = os.environ.get("HOST")
+
+        self.client = OpenAI(
+            api_key = TOKEN, 
+            base_url = f"{HOST}/serving-endpoints"
+        )
 
     def get_user_msg(
         self,
