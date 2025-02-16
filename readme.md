@@ -2,6 +2,10 @@
 
 # Meeting Notes Generator AI Agent
 
+## Demo Video
+
+Check out the demo video to see the Meeting Notes Generator AI Agent in action: [Watch Demo](https://youtu.be/M0A9hVGspco)
+
 ## Instructions to Setup the Project
 
 To get started with the project, follow these steps:

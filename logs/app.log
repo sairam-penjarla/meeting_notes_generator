@@ -24,3 +24,899 @@
 2025-02-01 14:25:47,303 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/copy.svg HTTP/1.1" 200 -
 2025-02-01 14:25:47,317 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
 2025-02-01 14:25:47,326 - INFO - 127.0.0.1 - - [01/Feb/2025 14:25:47] "GET /static/images/list-check.svg HTTP/1.1" 200 -
+2025-02-07 02:25:34,731 - INFO - Connected to the database: sessions.db
+2025-02-07 02:25:34,732 - INFO - Creating tables if they don't exist...
+2025-02-07 02:25:34,747 - INFO - Tables created or already exist.
+2025-02-07 02:25:34,843 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:25:34,844 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:25:41,913 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:41] "GET / HTTP/1.1" 200 -
+2025-02-07 02:25:41,979 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:41] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-07 02:25:41,986 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:41] "GET /static/images/cloud-upload.svg HTTP/1.1" 200 -
+2025-02-07 02:25:41,991 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-07 02:25:41,993 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:41] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-07 02:25:42,020 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-07 02:25:42,021 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/images/upload.svg HTTP/1.1" 200 -
+2025-02-07 02:25:42,041 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-07 02:25:42,042 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-07 02:25:42,058 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-07 02:25:42,071 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/images/list-check.svg HTTP/1.1" 200 -
+2025-02-07 02:25:42,075 - INFO - 127.0.0.1 - - [07/Feb/2025 02:25:42] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
+2025-02-07 02:26:05,390 - INFO - File type: .docx
+2025-02-07 02:26:05,440 - INFO - Parsed .docx file content
+2025-02-07 02:26:05,441 - INFO - Initial text length: 6012
+2025-02-07 02:26:12,330 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:16,594 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:16,597 - INFO - Text split into parts and processed
+2025-02-07 02:26:16,597 - INFO - Processed text length: 1907
+2025-02-07 02:26:16,598 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:16] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-07 02:26:16,998 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:17,001 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:17] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:26:17,016 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:17] "GET /static/images/participant-icon.svg HTTP/1.1" 200 -
+2025-02-07 02:26:18,051 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:18,053 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:18] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:26:22,995 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:22,997 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:22] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:26:28,762 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:28,765 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:28] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:26:30,971 - INFO - Retrieving session_icon for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:26:30,974 - WARNING - No session icon found for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:26:30,980 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:30] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-07 02:26:31,437 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:31,439 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:31] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-07 02:26:31,450 - INFO - Adding data to session: 2ffb33d4-5d1c-458e-9513-412a261a3560...
+2025-02-07 02:26:31,454 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:31] "GET /static/images/session-icons/tree-palm.svg HTTP/1.1" 200 -
+2025-02-07 02:26:31,454 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:31] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-07 02:26:31,467 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:31] "POST /update_session HTTP/1.1" 200 -
+2025-02-07 02:26:36,152 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "GET / HTTP/1.1" 200 -
+2025-02-07 02:26:36,222 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,243 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,265 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,304 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,319 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,325 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,367 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,368 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,377 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,380 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,397 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,404 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:36,405 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:36] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:41,889 - INFO - File type: .docx
+2025-02-07 02:26:41,915 - INFO - Parsed .docx file content
+2025-02-07 02:26:41,915 - INFO - Initial text length: 7559
+2025-02-07 02:26:47,349 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:50,139 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:50,141 - INFO - Text split into parts and processed
+2025-02-07 02:26:50,141 - INFO - Processed text length: 2144
+2025-02-07 02:26:50,142 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:50] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-07 02:26:50,782 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:50,784 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:50] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:26:50,795 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:50] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:26:51,833 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:51,835 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:51] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:26:57,220 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:26:57,222 - INFO - 127.0.0.1 - - [07/Feb/2025 02:26:57] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:27:04,369 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:27:04,370 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:04] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:27:06,186 - INFO - Retrieving session_icon for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:27:06,186 - WARNING - No session icon found for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:27:06,187 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:06] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-07 02:27:06,805 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:27:06,807 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:06] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-07 02:27:06,817 - INFO - Adding data to session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d...
+2025-02-07 02:27:06,820 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:06] "POST /update_session HTTP/1.1" 200 -
+2025-02-07 02:27:06,820 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:06] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-07 02:27:15,102 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:27:15,104 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:27:15,105 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:15] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-07 02:27:17,066 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:27:17,067 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:27:17,067 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:17] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-07 02:27:19,974 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:27:19,974 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:27:19,975 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:19] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-07 02:27:33,708 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:27:33,708 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:27:33,708 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:33] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-07 02:27:34,902 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:34] "GET / HTTP/1.1" 200 -
+2025-02-07 02:27:34,957 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-07 02:27:34,962 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:34] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,030 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,068 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,076 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,080 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,084 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,087 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,095 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,101 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,103 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,112 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,113 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:35,127 - INFO - 127.0.0.1 - - [07/Feb/2025 02:27:35] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:27:50,591 - INFO - Connected to the database: sessions.db
+2025-02-07 02:27:50,593 - INFO - Creating tables if they don't exist...
+2025-02-07 02:27:50,594 - INFO - Tables created or already exist.
+2025-02-07 02:27:50,646 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:27:50,646 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:29:59,138 - INFO - Connected to the database: sessions.db
+2025-02-07 02:29:59,139 - INFO - Creating tables if they don't exist...
+2025-02-07 02:29:59,145 - INFO - Tables created or already exist.
+2025-02-07 02:29:59,331 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:29:59,331 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:30:35,208 - INFO - Connected to the database: sessions.db
+2025-02-07 02:30:35,209 - INFO - Creating tables if they don't exist...
+2025-02-07 02:30:35,223 - INFO - Tables created or already exist.
+2025-02-07 02:30:35,279 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:30:35,279 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:37:38,521 - INFO - Connected to the database: sessions.db
+2025-02-07 02:37:38,522 - INFO - Creating tables if they don't exist...
+2025-02-07 02:37:38,523 - INFO - Tables created or already exist.
+2025-02-07 02:37:38,570 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:37:38,570 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:37:54,264 - INFO - Connected to the database: sessions.db
+2025-02-07 02:37:54,264 - INFO - Creating tables if they don't exist...
+2025-02-07 02:37:54,265 - INFO - Tables created or already exist.
+2025-02-07 02:37:54,302 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:37:54,310 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:40:00,311 - INFO - Connected to the database: sessions.db
+2025-02-07 02:40:00,312 - INFO - Creating tables if they don't exist...
+2025-02-07 02:40:00,320 - INFO - Tables created or already exist.
+2025-02-07 02:40:00,374 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:40:00,374 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:40:40,333 - INFO - Connected to the database: sessions.db
+2025-02-07 02:40:40,334 - INFO - Creating tables if they don't exist...
+2025-02-07 02:40:40,346 - INFO - Tables created or already exist.
+2025-02-07 02:40:40,402 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.103:8000
+2025-02-07 02:40:40,402 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-07 02:41:07,491 - INFO - File type: .docx
+2025-02-07 02:41:07,583 - INFO - Parsed .docx file content
+2025-02-07 02:41:07,583 - INFO - Initial text length: 7405
+2025-02-07 02:41:12,496 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:15,156 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:15,158 - INFO - Text split into parts and processed
+2025-02-07 02:41:15,158 - INFO - Processed text length: 1740
+2025-02-07 02:41:15,160 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:15] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-07 02:41:15,771 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:15,774 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:15] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:41:15,796 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:15] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:41:16,263 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:16,265 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:16] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:41:19,363 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:19,365 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:19] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:41:24,360 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:24,363 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:24] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:41:25,605 - INFO - Retrieving session_icon for session: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-07 02:41:25,608 - WARNING - No session icon found for session_id: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-07 02:41:25,609 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:25] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-07 02:41:26,215 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:41:26,218 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:26] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-07 02:41:26,225 - INFO - Adding data to session: 529e36a7-120b-40c7-849f-9dd801d14ff5...
+2025-02-07 02:41:26,229 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:26] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-07 02:41:26,238 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:26] "POST /update_session HTTP/1.1" 200 -
+2025-02-07 02:41:32,792 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:41:32,793 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-07 02:41:32,794 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:32] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-07 02:41:39,961 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:41:39,963 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-07 02:41:39,964 - INFO - 127.0.0.1 - - [07/Feb/2025 02:41:39] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-07 02:42:40,581 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "GET / HTTP/1.1" 200 -
+2025-02-07 02:42:40,636 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,646 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,695 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,777 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,810 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,827 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,851 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,865 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,873 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,879 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,884 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,887 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,903 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,905 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:40,907 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:40] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:42:52,504 - INFO - File type: .docx
+2025-02-07 02:42:52,551 - INFO - Parsed .docx file content
+2025-02-07 02:42:52,551 - INFO - Initial text length: 6568
+2025-02-07 02:42:57,351 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:42:59,703 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:42:59,705 - INFO - Text split into parts and processed
+2025-02-07 02:42:59,705 - INFO - Processed text length: 1763
+2025-02-07 02:42:59,705 - INFO - 127.0.0.1 - - [07/Feb/2025 02:42:59] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-07 02:43:00,153 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:43:00,155 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:00] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:43:00,168 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:00] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-07 02:43:00,753 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:43:00,755 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:00] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:43:04,289 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:43:04,292 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:04] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:43:10,025 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:43:10,028 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:10] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-07 02:43:11,168 - INFO - Retrieving session_icon for session: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-07 02:43:11,168 - WARNING - No session icon found for session_id: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-07 02:43:11,169 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:11] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-07 02:43:11,683 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-07 02:43:11,688 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:11] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-07 02:43:11,698 - INFO - Adding data to session: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a...
+2025-02-07 02:43:11,702 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:11] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-07 02:43:11,703 - INFO - 127.0.0.1 - - [07/Feb/2025 02:43:11] "POST /update_session HTTP/1.1" 200 -
+2025-02-16 15:25:50,612 - INFO - Connected to the database: sessions.db
+2025-02-16 15:25:50,613 - INFO - Creating tables if they don't exist...
+2025-02-16 15:25:50,633 - INFO - Tables created or already exist.
+2025-02-16 15:25:50,754 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.10.6:8000
+2025-02-16 15:25:50,754 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 15:26:02,926 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:02] "GET / HTTP/1.1" 200 -
+2025-02-16 15:26:03,108 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-16 15:26:03,114 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-16 15:26:03,119 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 15:26:03,122 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-16 15:26:03,154 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,154 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-16 15:26:03,168 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-16 15:26:03,180 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-16 15:26:03,195 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,209 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,221 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,228 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,238 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,249 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-16 15:26:03,264 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:03,273 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:03] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:08,710 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 15:26:08,711 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 15:26:08,712 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:08] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 15:26:08,747 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:08] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:25,954 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 15:26:25,956 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 15:26:25,957 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:25] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 15:26:26,845 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 15:26:26,846 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 15:26:26,846 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:26] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 15:26:27,455 - INFO - Retrieving session data for session: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 15:26:27,456 - INFO - Retrieved 1 entries for session_id: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 15:26:27,457 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:27] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 15:26:28,434 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "GET / HTTP/1.1" 200 -
+2025-02-16 15:26:28,519 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,525 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,532 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,535 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,566 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,577 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,590 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,591 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,602 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,603 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,604 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,609 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,709 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,718 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,719 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:28,721 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:28] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 15:26:43,432 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 15:26:43,435 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 15:26:43,436 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:43] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 15:26:43,450 - INFO - 127.0.0.1 - - [16/Feb/2025 15:26:43] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:51,676 - INFO - Connected to the database: sessions.db
+2025-02-16 18:16:51,677 - INFO - Creating tables if they don't exist...
+2025-02-16 18:16:51,679 - INFO - Tables created or already exist.
+2025-02-16 18:16:51,827 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.10.6:8000
+2025-02-16 18:16:51,827 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 18:16:55,452 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET / HTTP/1.1" 200 -
+2025-02-16 18:16:55,542 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 18:16:55,555 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-16 18:16:55,557 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-16 18:16:55,558 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-16 18:16:55,569 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,578 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-16 18:16:55,584 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-16 18:16:55,598 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-16 18:16:55,606 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-16 18:16:55,635 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,642 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,678 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,686 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,691 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,696 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:16:55,706 - INFO - 127.0.0.1 - - [16/Feb/2025 18:16:55] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 18:17:00,023 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 18:17:00,026 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 18:17:00,027 - INFO - 127.0.0.1 - - [16/Feb/2025 18:17:00] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 18:17:00,059 - INFO - 127.0.0.1 - - [16/Feb/2025 18:17:00] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:10,123 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET / HTTP/1.1" 200 -
+2025-02-16 19:14:10,192 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-16 19:14:10,192 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 19:14:10,193 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-16 19:14:10,206 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,206 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,215 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/session-icons/tree-palm.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,218 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,228 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,228 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,238 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/upload.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,239 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/cloud-upload.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,248 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,248 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,256 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,257 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
+2025-02-16 19:14:10,307 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:10] "GET /static/images/list-check.svg HTTP/1.1" 200 -
+2025-02-16 19:14:11,796 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:11] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+2025-02-16 19:14:11,816 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:11] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+2025-02-16 19:14:12,808 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:14:12,809 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:14:12,811 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:12] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:14:12,821 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:12] "GET /static/images/participant-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:14:47,324 - INFO - Connected to the database: sessions.db
+2025-02-16 19:14:47,324 - INFO - Creating tables if they don't exist...
+2025-02-16 19:14:47,337 - INFO - Tables created or already exist.
+2025-02-16 19:14:47,515 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.10.6:8000
+2025-02-16 19:14:47,516 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 19:14:47,519 - INFO -  * Restarting with stat
+2025-02-16 19:14:49,939 - INFO - Connected to the database: sessions.db
+2025-02-16 19:14:49,939 - INFO - Creating tables if they don't exist...
+2025-02-16 19:14:49,940 - INFO - Tables created or already exist.
+2025-02-16 19:14:50,011 - WARNING -  * Debugger is active!
+2025-02-16 19:14:50,037 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:14:50,066 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "GET / HTTP/1.1" 200 -
+2025-02-16 19:14:50,113 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,113 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,121 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,137 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,144 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,148 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,148 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,151 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,155 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,156 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,159 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,161 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,163 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,167 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,175 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:50,180 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:50] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:53,038 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:14:53,038 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:14:53,039 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:53] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:14:53,047 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:53] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:14:54,148 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:54] "GET /static/images/copy-check.svg HTTP/1.1" 200 -
+2025-02-16 19:14:56,149 - INFO - 127.0.0.1 - - [16/Feb/2025 19:14:56] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,537 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "GET / HTTP/1.1" 200 -
+2025-02-16 19:15:53,617 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,620 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,624 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,661 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,667 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,671 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,685 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,689 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,692 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,694 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,697 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,701 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,716 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,717 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,723 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:53,726 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:53] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:54,548 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:15:54,549 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:15:54,549 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:54] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:15:54,563 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:54] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:15:57,098 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:57] "GET /static/images/copy-check.svg HTTP/1.1" 200 -
+2025-02-16 19:15:59,099 - INFO - 127.0.0.1 - - [16/Feb/2025 19:15:59] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:05,809 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 19:16:05,810 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 19:16:05,811 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:05] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:16:05,836 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:05] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,915 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "GET / HTTP/1.1" 200 -
+2025-02-16 19:16:09,965 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,967 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,972 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,980 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,983 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,987 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:09,995 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,000 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,007 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,007 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,011 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,016 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,024 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,027 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,037 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:10,041 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:10] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:15,430 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:16:15,431 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:16:15,432 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:15] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:16:15,441 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:15] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:16:21,651 - INFO - Retrieving session data for session: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 19:16:21,652 - INFO - Retrieved 1 entries for session_id: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 19:16:21,652 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:21] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:16:21,659 - INFO - 127.0.0.1 - - [16/Feb/2025 19:16:21] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:17:18,678 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:17:19,139 - INFO -  * Restarting with stat
+2025-02-16 19:17:24,528 - INFO - Connected to the database: sessions.db
+2025-02-16 19:17:24,530 - INFO - Creating tables if they don't exist...
+2025-02-16 19:17:24,531 - INFO - Tables created or already exist.
+2025-02-16 19:17:24,643 - WARNING -  * Debugger is active!
+2025-02-16 19:17:24,685 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:17:39,942 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:17:40,684 - INFO -  * Restarting with stat
+2025-02-16 19:17:46,088 - INFO - Connected to the database: sessions.db
+2025-02-16 19:17:46,088 - INFO - Creating tables if they don't exist...
+2025-02-16 19:17:46,089 - INFO - Tables created or already exist.
+2025-02-16 19:17:46,194 - WARNING -  * Debugger is active!
+2025-02-16 19:17:46,231 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:17:49,332 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:17:50,287 - INFO -  * Restarting with stat
+2025-02-16 19:17:54,143 - INFO - Connected to the database: sessions.db
+2025-02-16 19:17:54,143 - INFO - Creating tables if they don't exist...
+2025-02-16 19:17:54,144 - INFO - Tables created or already exist.
+2025-02-16 19:17:54,230 - WARNING -  * Debugger is active!
+2025-02-16 19:17:54,253 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:18:08,524 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:18:09,061 - INFO -  * Restarting with stat
+2025-02-16 19:18:12,229 - INFO - Connected to the database: sessions.db
+2025-02-16 19:18:12,229 - INFO - Creating tables if they don't exist...
+2025-02-16 19:18:12,230 - INFO - Tables created or already exist.
+2025-02-16 19:18:12,308 - WARNING -  * Debugger is active!
+2025-02-16 19:18:12,329 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:18:16,389 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:18:16,921 - INFO -  * Restarting with stat
+2025-02-16 19:18:19,611 - INFO - Connected to the database: sessions.db
+2025-02-16 19:18:19,612 - INFO - Creating tables if they don't exist...
+2025-02-16 19:18:19,612 - INFO - Tables created or already exist.
+2025-02-16 19:18:19,700 - WARNING -  * Debugger is active!
+2025-02-16 19:18:19,720 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:18:20,754 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:18:21,214 - INFO -  * Restarting with stat
+2025-02-16 19:18:23,687 - INFO - Connected to the database: sessions.db
+2025-02-16 19:18:23,688 - INFO - Creating tables if they don't exist...
+2025-02-16 19:18:23,688 - INFO - Tables created or already exist.
+2025-02-16 19:18:23,782 - WARNING -  * Debugger is active!
+2025-02-16 19:18:23,806 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:18:29,909 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:18:30,875 - INFO -  * Restarting with stat
+2025-02-16 19:18:35,154 - INFO - Connected to the database: sessions.db
+2025-02-16 19:18:35,155 - INFO - Creating tables if they don't exist...
+2025-02-16 19:18:35,156 - INFO - Tables created or already exist.
+2025-02-16 19:18:35,252 - WARNING -  * Debugger is active!
+2025-02-16 19:18:35,275 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:18:49,486 - INFO -  * Detected change in '/Users/sairampinjarla/Desktop/meeting_notes_generator/src/prompt_templates.py', reloading
+2025-02-16 19:18:49,912 - INFO -  * Restarting with stat
+2025-02-16 19:18:54,806 - INFO - Connected to the database: sessions.db
+2025-02-16 19:18:54,806 - INFO - Creating tables if they don't exist...
+2025-02-16 19:18:54,807 - INFO - Tables created or already exist.
+2025-02-16 19:18:54,907 - WARNING -  * Debugger is active!
+2025-02-16 19:18:54,940 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:19:56,982 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:56] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:19:56,988 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:56] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:19:56,988 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:56] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:19:56,992 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:56] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:19:57,103 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:57] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:19:57,105 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:57] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:19:57,124 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:57] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-16 19:19:57,128 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:57] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:19:57,135 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:57] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-16 19:19:57,143 - INFO - 127.0.0.1 - - [16/Feb/2025 19:19:57] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:20:00,768 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "GET / HTTP/1.1" 200 -
+2025-02-16 19:20:00,814 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 19:20:00,815 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,816 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,818 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,819 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,826 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,829 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,831 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,834 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,837 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,838 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,843 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,843 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,847 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,852 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:00,859 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:00] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:03,170 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:20:03,170 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:20:03,171 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:03] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:03,194 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:03] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:35,356 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 19:20:35,357 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 19:20:35,358 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:35] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:35,367 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:35] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:35,807 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:20:35,807 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:20:35,808 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:35] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:35,821 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:35] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:36,295 - INFO - Retrieving session data for session: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 19:20:36,295 - INFO - Retrieved 1 entries for session_id: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 19:20:36,296 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:36] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:36,304 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:36] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:36,763 - INFO - Retrieving session data for session: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 19:20:36,764 - INFO - Retrieved 1 entries for session_id: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 19:20:36,764 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:36] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:36,772 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:36] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:37,500 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:20:37,500 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:20:37,500 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:37] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:37,514 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:37] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,921 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "GET / HTTP/1.1" 200 -
+2025-02-16 19:20:40,966 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,968 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 19:20:40,969 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,969 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,974 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,975 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,981 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,986 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,992 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,994 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:40,995 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:20:41,002 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:41] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:41,003 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:41] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:41,006 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:41] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:41,009 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:41] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:41,011 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:41] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:42,261 - INFO - Retrieving session data for session: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 19:20:42,262 - INFO - Retrieved 1 entries for session_id: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 19:20:42,262 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:42] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:20:42,281 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:42] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:44,028 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:44] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:45,441 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:45] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:46,030 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:46] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:46,948 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:46] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:47,448 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:47] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:48,953 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:48] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:50,915 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:50] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:52,921 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:52] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:55,563 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:55] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:20:57,568 - INFO - 127.0.0.1 - - [16/Feb/2025 19:20:57] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:25:37,656 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:37] "[36mGET /static/images/copy-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:25:39,639 - INFO - 127.0.0.1 - - [16/Feb/2025 19:25:39] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:36:06,121 - INFO - Connected to the database: sessions.db
+2025-02-16 19:36:06,122 - INFO - Creating tables if they don't exist...
+2025-02-16 19:36:06,128 - INFO - Tables created or already exist.
+2025-02-16 19:36:38,529 - INFO - Connected to the database: sessions.db
+2025-02-16 19:36:38,532 - INFO - Creating tables if they don't exist...
+2025-02-16 19:36:38,546 - INFO - Tables created or already exist.
+2025-02-16 19:36:48,405 - INFO - Connected to the database: sessions.db
+2025-02-16 19:36:48,405 - INFO - Creating tables if they don't exist...
+2025-02-16 19:36:48,406 - INFO - Tables created or already exist.
+2025-02-16 19:36:48,566 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://192.168.10.6:9000
+2025-02-16 19:36:48,566 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 19:36:48,568 - INFO -  * Restarting with stat
+2025-02-16 19:36:53,914 - INFO - Connected to the database: sessions.db
+2025-02-16 19:36:53,914 - INFO - Creating tables if they don't exist...
+2025-02-16 19:36:53,915 - INFO - Tables created or already exist.
+2025-02-16 19:36:54,026 - WARNING -  * Debugger is active!
+2025-02-16 19:36:54,065 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 19:36:56,565 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET / HTTP/1.1" 200 -
+2025-02-16 19:36:56,604 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-16 19:36:56,606 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-16 19:36:56,606 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 19:36:56,616 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,616 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,625 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/session-icons/tree-palm.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,626 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,634 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,635 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,646 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/upload.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,646 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/cloud-upload.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,654 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,654 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,662 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,663 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
+2025-02-16 19:36:56,669 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:56] "GET /static/images/list-check.svg HTTP/1.1" 200 -
+2025-02-16 19:36:57,175 - INFO - 127.0.0.1 - - [16/Feb/2025 19:36:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-16 19:37:12,453 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 19:37:12,462 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 19:37:12,463 - INFO - 127.0.0.1 - - [16/Feb/2025 19:37:12] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:37:12,503 - INFO - 127.0.0.1 - - [16/Feb/2025 19:37:12] "GET /static/images/participant-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,224 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET / HTTP/1.1" 200 -
+2025-02-16 19:45:17,326 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 19:45:17,330 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-16 19:45:17,332 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,335 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,383 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/session-icons/tree-palm.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,386 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,402 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-16 19:45:17,431 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,442 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,447 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/cloud-upload.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,456 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/upload.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,468 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,482 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,488 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,491 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,498 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "GET /static/images/list-check.svg HTTP/1.1" 200 -
+2025-02-16 19:45:17,902 - INFO - 127.0.0.1 - - [16/Feb/2025 19:45:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-16 19:46:31,858 - INFO - File type: .docx
+2025-02-16 19:46:32,057 - INFO - Parsed .docx file content
+2025-02-16 19:46:32,058 - INFO - Initial text length: 6012
+2025-02-16 19:46:37,503 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:39,959 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:39,961 - INFO - Text split into parts and processed
+2025-02-16 19:46:39,967 - INFO - Processed text length: 1928
+2025-02-16 19:46:39,971 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:39] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-16 19:46:40,654 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:40,658 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:40] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:46:40,742 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:40] "GET /static/images/participant-icon.svg HTTP/1.1" 200 -
+2025-02-16 19:46:41,585 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:41,587 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:41] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:46:44,593 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:44,599 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:44] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:46:52,534 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:52,537 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:52] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:46:54,550 - INFO - Retrieving session_icon for session: c64082fc-c8cb-4b85-b72b-6646c4a68680
+2025-02-16 19:46:54,572 - WARNING - No session icon found for session_id: c64082fc-c8cb-4b85-b72b-6646c4a68680
+2025-02-16 19:46:54,574 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:54] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-16 19:46:55,075 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:46:55,077 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:55] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-16 19:46:55,086 - INFO - Adding data to session: c64082fc-c8cb-4b85-b72b-6646c4a68680...
+2025-02-16 19:46:55,101 - INFO - 127.0.0.1 - - [16/Feb/2025 19:46:55] "POST /update_session HTTP/1.1" 200 -
+2025-02-16 19:47:16,384 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:16] "GET /static/images/copy-check.svg HTTP/1.1" 200 -
+2025-02-16 19:47:33,507 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "GET / HTTP/1.1" 200 -
+2025-02-16 19:47:33,621 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,643 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,652 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,677 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,721 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,741 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,802 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,866 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,884 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,909 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,911 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,912 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,917 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,920 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,960 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:33,961 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:33] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,217 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "GET / HTTP/1.1" 200 -
+2025-02-16 19:47:38,321 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,374 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,393 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,520 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,547 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,563 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,568 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,584 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,604 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,606 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,632 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,632 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,642 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,730 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,738 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:38,777 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:38] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:39,588 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:47:39,592 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 19:47:39,594 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:39] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 19:47:39,668 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:39] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,388 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "GET / HTTP/1.1" 200 -
+2025-02-16 19:47:41,548 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,556 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,562 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,568 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,792 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,800 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,809 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,817 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,825 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,832 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,847 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,852 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,856 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,865 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,871 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:47:41,880 - INFO - 127.0.0.1 - - [16/Feb/2025 19:47:41] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:49:08,435 - INFO - File type: .docx
+2025-02-16 19:49:08,642 - INFO - Parsed .docx file content
+2025-02-16 19:49:08,643 - INFO - Initial text length: 6012
+2025-02-16 19:49:14,408 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:16,468 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:16,471 - INFO - Text split into parts and processed
+2025-02-16 19:49:16,472 - INFO - Processed text length: 1811
+2025-02-16 19:49:16,489 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:16] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-16 19:49:17,270 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:17,274 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:17] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:49:17,360 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:17] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 19:49:17,949 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:17,951 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:17] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:49:20,986 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:20,988 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:20] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:49:25,508 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:25,510 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:25] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 19:49:27,997 - INFO - Retrieving session_icon for session: 9ea2873b-98fb-4818-b0aa-39b83699fd3b
+2025-02-16 19:49:27,998 - WARNING - No session icon found for session_id: 9ea2873b-98fb-4818-b0aa-39b83699fd3b
+2025-02-16 19:49:27,999 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:27] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-16 19:49:28,902 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 19:49:28,909 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:28] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-16 19:49:31,803 - INFO - Adding data to session: 9ea2873b-98fb-4818-b0aa-39b83699fd3b...
+2025-02-16 19:49:31,808 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:31] "POST /update_session HTTP/1.1" 200 -
+2025-02-16 19:49:31,827 - INFO - 127.0.0.1 - - [16/Feb/2025 19:49:31] "GET /static/images/session-icons/dog.svg HTTP/1.1" 200 -
+2025-02-16 20:13:48,939 - INFO - Connected to the database: sessions.db
+2025-02-16 20:13:48,940 - INFO - Creating tables if they don't exist...
+2025-02-16 20:13:48,947 - INFO - Tables created or already exist.
+2025-02-16 20:13:49,148 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9000
+ * Running on http://192.168.10.6:9000
+2025-02-16 20:13:49,149 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 20:13:49,153 - INFO -  * Restarting with stat
+2025-02-16 20:13:53,551 - INFO - Connected to the database: sessions.db
+2025-02-16 20:13:53,551 - INFO - Creating tables if they don't exist...
+2025-02-16 20:13:53,552 - INFO - Tables created or already exist.
+2025-02-16 20:13:53,761 - WARNING -  * Debugger is active!
+2025-02-16 20:13:53,843 - INFO -  * Debugger PIN: 997-076-393
+2025-02-16 20:13:53,912 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:53] "GET / HTTP/1.1" 200 -
+2025-02-16 20:13:54,112 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,137 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,137 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,143 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,154 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,155 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,166 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,180 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,196 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/session-icons/dog.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,217 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,229 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,241 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,287 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,365 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,366 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,370 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:13:54,375 - INFO - 127.0.0.1 - - [16/Feb/2025 20:13:54] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:18:38,563 - INFO - File type: .docx
+2025-02-16 20:18:38,677 - INFO - Parsed .docx file content
+2025-02-16 20:18:38,677 - INFO - Initial text length: 6012
+2025-02-16 20:18:44,659 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:46,953 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:46,955 - INFO - Text split into parts and processed
+2025-02-16 20:18:46,955 - INFO - Processed text length: 2129
+2025-02-16 20:18:46,957 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:46] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-16 20:18:47,819 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:47,825 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:47] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:18:48,045 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:48] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:18:48,499 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:48,501 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:48] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:18:51,101 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:51,103 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:51] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:18:56,123 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:56,142 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:56] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:18:58,646 - INFO - Retrieving session_icon for session: 75d86748-b2d2-443f-b239-77cacd28c392
+2025-02-16 20:18:58,647 - WARNING - No session icon found for session_id: 75d86748-b2d2-443f-b239-77cacd28c392
+2025-02-16 20:18:58,648 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:58] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-16 20:18:59,219 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:18:59,221 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:59] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-16 20:18:59,796 - INFO - Adding data to session: 75d86748-b2d2-443f-b239-77cacd28c392...
+2025-02-16 20:18:59,805 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:59] "POST /update_session HTTP/1.1" 200 -
+2025-02-16 20:18:59,844 - INFO - 127.0.0.1 - - [16/Feb/2025 20:18:59] "GET /static/images/session-icons/rat.svg HTTP/1.1" 200 -
+2025-02-16 20:19:48,296 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "GET / HTTP/1.1" 200 -
+2025-02-16 20:19:48,374 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,382 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/css/markdown_styles.css HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,425 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/session-icons/flower.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,445 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/delete_black.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,478 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/session-icons/tree-palm.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,495 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/session-icons/tree-deciduous.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,512 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,541 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/session-icons/lamp-desk.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,554 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/session-icons/rat.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,567 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/session-icons/dog.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,572 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/notes-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,578 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/cloud-upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,579 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/upload.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,580 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/plus.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,583 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/users.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,594 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/copy.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,599 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/notebook-pen.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:19:48,605 - INFO - 127.0.0.1 - - [16/Feb/2025 20:19:48] "[36mGET /static/images/list-check.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:20:56,068 - INFO - File type: .docx
+2025-02-16 20:20:56,194 - INFO - Parsed .docx file content
+2025-02-16 20:20:56,194 - INFO - Initial text length: 6012
+2025-02-16 20:21:00,993 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:03,217 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:03,222 - INFO - Text split into parts and processed
+2025-02-16 20:21:03,222 - INFO - Processed text length: 1819
+2025-02-16 20:21:03,227 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:03] "POST /read_transcript HTTP/1.1" 200 -
+2025-02-16 20:21:03,883 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:03,890 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:03] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:21:03,946 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:03] "[36mGET /static/images/participant-icon.svg HTTP/1.1[0m" 304 -
+2025-02-16 20:21:04,995 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:05,003 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:05] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:21:08,191 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:08,193 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:08] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:21:12,380 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:12,384 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:12] "POST /invoke_agent HTTP/1.1" 200 -
+2025-02-16 20:21:13,694 - INFO - Retrieving session_icon for session: 85a30b6d-1b14-43bb-ba47-13036150166b
+2025-02-16 20:21:13,695 - WARNING - No session icon found for session_id: 85a30b6d-1b14-43bb-ba47-13036150166b
+2025-02-16 20:21:13,698 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:13] "POST /get_random_session_icon HTTP/1.1" 200 -
+2025-02-16 20:21:14,227 - INFO - HTTP Request: POST https://adb-7488500312027058.18.azuredatabricks.net/serving-endpoints/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 20:21:14,230 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:14] "POST /get_session_name HTTP/1.1" 200 -
+2025-02-16 20:21:14,239 - INFO - Adding data to session: 85a30b6d-1b14-43bb-ba47-13036150166b...
+2025-02-16 20:21:14,242 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:14] "GET /static/images/session-icons/snail.svg HTTP/1.1" 200 -
+2025-02-16 20:21:14,243 - INFO - 127.0.0.1 - - [16/Feb/2025 20:21:14] "POST /update_session HTTP/1.1" 200 -
+2025-02-16 20:28:24,911 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 20:28:24,917 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 20:28:24,919 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:24] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:25,731 - INFO - Retrieving session data for session: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 20:28:25,732 - INFO - Retrieved 1 entries for session_id: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 20:28:25,733 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:25] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:26,964 - INFO - Retrieving session data for session: 85a30b6d-1b14-43bb-ba47-13036150166b
+2025-02-16 20:28:26,964 - INFO - Retrieved 1 entries for session_id: 85a30b6d-1b14-43bb-ba47-13036150166b
+2025-02-16 20:28:26,964 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:26] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:45,259 - INFO - Retrieving session data for session: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 20:28:45,264 - INFO - Retrieved 1 entries for session_id: 2ffb33d4-5d1c-458e-9513-412a261a3560
+2025-02-16 20:28:45,265 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:45] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:46,090 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 20:28:46,090 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 20:28:46,091 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:46] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:46,910 - INFO - Retrieving session data for session: 85a30b6d-1b14-43bb-ba47-13036150166b
+2025-02-16 20:28:46,912 - INFO - Retrieved 1 entries for session_id: 85a30b6d-1b14-43bb-ba47-13036150166b
+2025-02-16 20:28:46,913 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:46] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:48,087 - INFO - Retrieving session data for session: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 20:28:48,088 - INFO - Retrieved 1 entries for session_id: 73b3d741-2c73-4ed5-b5f3-b92f33604e2a
+2025-02-16 20:28:48,094 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:48] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:49,438 - INFO - Retrieving session data for session: c64082fc-c8cb-4b85-b72b-6646c4a68680
+2025-02-16 20:28:49,439 - INFO - Retrieved 1 entries for session_id: c64082fc-c8cb-4b85-b72b-6646c4a68680
+2025-02-16 20:28:49,440 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:49] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:50,628 - INFO - Retrieving session data for session: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 20:28:50,628 - INFO - Retrieved 1 entries for session_id: 529e36a7-120b-40c7-849f-9dd801d14ff5
+2025-02-16 20:28:50,635 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:50] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:28:51,909 - INFO - Retrieving session data for session: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 20:28:51,910 - INFO - Retrieved 1 entries for session_id: 1b49d4a9-73dd-4f28-90c0-ec9ff5e7277d
+2025-02-16 20:28:51,919 - INFO - 127.0.0.1 - - [16/Feb/2025 20:28:51] "POST /get_session_data HTTP/1.1" 200 -
+2025-02-16 20:49:16,820 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET / HTTP/1.1" 200 -
+2025-02-16 20:49:16,893 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/css/markdown_styles.css HTTP/1.1" 200 -
+2025-02-16 20:49:16,894 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-16 20:49:16,895 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-16 20:49:16,924 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/flower.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,927 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/delete_black.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,937 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/tree-palm.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,940 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/lamp-desk.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,951 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/rat.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,953 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/tree-deciduous.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,963 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/snail.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,965 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/session-icons/dog.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,980 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/users.svg HTTP/1.1" 200 -
+2025-02-16 20:49:16,980 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:16] "GET /static/images/plus.svg HTTP/1.1" 200 -
+2025-02-16 20:49:17,008 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:17] "GET /static/images/cloud-upload.svg HTTP/1.1" 200 -
+2025-02-16 20:49:17,099 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:17] "GET /static/images/notes-icon.svg HTTP/1.1" 200 -
+2025-02-16 20:49:17,108 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:17] "GET /static/images/upload.svg HTTP/1.1" 200 -
+2025-02-16 20:49:17,140 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:17] "GET /static/images/copy.svg HTTP/1.1" 200 -
+2025-02-16 20:49:17,142 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:17] "GET /static/images/notebook-pen.svg HTTP/1.1" 200 -
+2025-02-16 20:49:17,156 - INFO - 127.0.0.1 - - [16/Feb/2025 20:49:17] "GET /static/images/list-check.svg HTTP/1.1" 200 -

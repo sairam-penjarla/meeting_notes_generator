@@ -1,196 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>AI Meeting notes generator</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI Meeting notes generator</title>
 
-            <!-- Link to CSS file -->
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/markdown_styles.css') }}" />
-            <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-      </head>
-      <body>
-            <div class="color-mode-toggle-container">
-                  <label class="theme-switch">
-                        <input type="checkbox" id="theme-toggle" />
-                        <span class="slider"></span>
-                  </label>
+        <!-- Link to CSS file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/markdown_styles.css') }}" />
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    </head>
+    <body>
+        <div class="color-mode-toggle-container">
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="container">
+            <div class="sidebar">
+                <div class="project-name">
+                    <div class="project-title">AI Meeting notes generator</div>
+                </div>
+                <div class="recent-chats">
+                    <p>Recent Chat</p>
+                    <a href="#" class="clear-all" onclick="clearAllChats()">Clear All</a>
+                </div>
+                <ul class="session-list my-scrollbar" id="session-list">
+                    {% for session_id, meta_data in previous_session_meta_data.items() %}
+                    <li class="chat-item" session_id="{{ session_id }}" onclick="loadSessionData('{{ session_id }}')">
+                        <div class="chat-item-emoji">
+                            <img src="/static/images/session-icons/{{ meta_data.session_icon }}" class="emoji-button" />
+                        </div>
+                        <div class="chat-item-question">{{ meta_data.session_name }}</div>
+                        <div class="chat-item-delete-container">
+                            <img src="/static/images/delete_black.svg" class="delete-button" onclick="event.stopPropagation(); deleteSession('{{ session_id }}')" />
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <button class="new-session-button">
+                    <img src="/static/images/plus.svg" class="new-session-icon" />
+                </button>
             </div>
+            <div class="main-content">
+                <div class="loader"></div>
+                <div class="file-upload-container" id="file-upload-container">
+                    <div id="dropZone" class="drop-zone">
+                        <span class="upload-section-icon">
+                            <img class="upload-section-icon-img" src="/static/images/cloud-upload.svg" alt="Notes Icon" />
+                        </span>
+                        <p>Drag and drop your file here or click to upload</p>
+                        <input type="file" id="fileUpload" accept=".txt,.docx,.vtt" />
+                    </div>
+                    <textarea id="transcriptInput" placeholder="Paste your transcript here..."></textarea>
+                    <button id="uploadButton" onclick="uploadTranscript()">
+                        <span class="section-icon">
+                            <img class="section-icon-img" src="/static/images/upload.svg" alt="Notes Icon" />
+                        </span>
+                        <div class="upload-text">Upload</div>
+                    </button>
+                </div>
 
-            <div class="container">
-                  <div class="sidebar">
-                        <div class="project-name">
-                              <div class="project-title">AI Meeting notes generator</div>
-                        </div>
-                        <div class="recent-chats">
-                              <p>Recent Chat</p>
-                              <a href="#" class="clear-all" onclick="clearAllChats()">Clear All</a>
-                        </div>
-                        <ul class="session-list my-scrollbar" id="session-list">
-                              {% for session_id, meta_data in previous_session_meta_data.items() %}
-                              <li class="chat-item" session_id="{{ session_id }}" onclick="loadSessionData('{{ session_id }}')">
-                                    <div class="chat-item-emoji">
-                                          <img src="/static/images/session-icons/{{ meta_data.session_icon }}" class="emoji-button" />
-                                    </div>
-                                    <div class="chat-item-question">{{ meta_data.session_name }}</div>
-                                    <div class="chat-item-delete-container">
-                                          <img src="/static/images/delete_black.svg" class="delete-button" onclick="event.stopPropagation(); deleteSession('{{ session_id }}')" />
-                                    </div>
-                              </li>
-                              {% endfor %}
-                        </ul>
-                        <button class="new-session-button">
-                              <img src="/static/images/plus.svg" class="new-session-icon" />
-                        </button>
-                  </div>
-                  <div class="main-content">
-                        <div class="loader"></div>
-                        <div class="file-upload-container" id="file-upload-container">
-                              <div id="dropZone" class="drop-zone">
-                                    <span class="upload-section-icon">
-                                          <img class="upload-section-icon-img" src="/static/images/cloud-upload.svg" alt="Notes Icon" />
-                                    </span>
-                                    <p>Drag and drop your file here or click to upload</p>
-                                    <input type="file" id="fileUpload" accept=".txt,.docx,.vtt" />
-                              </div>
-                              <textarea id="transcriptInput" placeholder="Paste your transcript here..."></textarea>
-                              <button id="uploadButton" onclick="uploadTranscript()">
+                <!-- Transcript Section -->
+                <div id="writeTranscriptOutput" class="output-section transcript-output-section">
+                    <div class="section-title">
+                        <span class="section-icon">
+                            <img class="section-icon-img" src="/static/images/notes-icon.svg" alt="Notes Icon" />
+                        </span>
+                        <div class="section-text">Transcript</div>
+                    </div>
+                    <div class="output-content message my-scrollbar"></div>
+                </div>
+
+                <div class="output-container" id="output-container">
+                    <!-- Participants Section -->
+                    <div class="col1">
+                        <div id="identifyParticipantsOutput" class="output-section">
+                            <div class="section-header">
+                                <div class="section-title">
                                     <span class="section-icon">
-                                          <img class="section-icon-img" src="/static/images/upload.svg" alt="Notes Icon" />
+                                        <img class="section-icon-img" src="/static/images/users.svg" alt="Notes Icon" />
                                     </span>
-                                    <div class="upload-text">Upload</div>
-                              </button>
-                        </div>
-
-                        <!-- Transcript Section -->
-                        <div id="writeTranscriptOutput" class="output-section transcript-output-section">
-                              <div class="section-title">
-                                    <span class="section-icon">
-                                          <img class="section-icon-img" src="/static/images/notes-icon.svg" alt="Notes Icon" />
-                                    </span>
-                                    <div class="section-text">Transcript</div>
+                                    <div class="section-text">Participants</div>
+                                </div>
+                              <div class="copy-container" onclick="copyParticipants(this)">
+                                    <img src="/static/images/copy.svg" alt="Copy Icon" />
                               </div>
-                              <div class="output-content message my-scrollbar"></div>
-                        </div>
-
-                        <div class="output-container" id="output-container">
-                              <!-- Participants Section -->
-                              <div class="col1">
-                                    <div id="identifyParticipantsOutput" class="output-section">
-                                          <div class="section-header">
-                                                <div class="section-title">
-                                                      <span class="section-icon">
-                                                            <img class="section-icon-img" src="/static/images/users.svg" alt="Notes Icon" />
-                                                      </span>
-                                                      <div class="section-text">Participants</div>
-                                                </div>
-                                                <div class="copy-container" onclick="copyParticipants()">
-                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
-                                                </div>
-                                          </div>
-
-                                          <div class="output-content message">
-                                                <ul class="participant-list"></ul>
-                                          </div>
-                                    </div>
-
-                                    <!-- Summary Section -->
-                                    <div id="writeSummaryOutput" class="output-section">
-                                          <div class="section-header">
-                                                <div class="section-title">
-                                                      <span class="section-icon">
-                                                            <img class="section-icon-img" src="/static/images/notes-icon.svg" alt="Notes Icon" />
-                                                      </span>
-                                                      <div class="section-text">Summary</div>
-                                                </div>
-                                                <div class="copy-container" onclick="copyContent('writeSummaryOutput')">
-                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
-                                                </div>
-                                          </div>
-
-                                          <div class="output-content message"></div>
-                                    </div>
-                              </div>
-                              <div class="col2">
-                                    <!-- Meeting Notes Section -->
-                                    <div id="writeNotesOutput" class="output-section">
-                                          <div class="section-header">
-                                                <div class="section-title">
-                                                      <span class="section-icon">
-                                                            <img class="section-icon-img" src="/static/images/notebook-pen.svg" alt="Notes Icon" />
-                                                      </span>
-                                                      <div class="section-text">Notes</div>
-                                                </div>
-                                                <div class="copy-container" onclick="copyContent('writeNotesOutput')">
-                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
-                                                </div>
-                                          </div>
-
-                                          <div class="output-content message"></div>
-                                    </div>
-
-                                    <!-- Action Items Section -->
-                                    <div id="writeActionItemsOutput" class="output-section">
-                                          <div class="section-header">
-                                                <div class="section-title">
-                                                      <span class="section-icon">
-                                                            <img class="section-icon-img" src="/static/images/list-check.svg" alt="Notes Icon" />
-                                                      </span>
-                                                      <div class="section-text">Action Items</div>
-                                                </div>
-                                                <div class="copy-container" onclick="copyContent('writeActionItemsOutput')">
-                                                      <img src="/static/images/copy.svg" alt="Copy Icon" />
-                                                </div>
-                                          </div>
-
-                                          <div class="output-content message"></div>
-                                    </div>
-                              </div>
-                        </div>
-
-                        <script>
-                              function copyParticipants() {
-                                    const participants = document.querySelectorAll(".participant-list .participant-name");
-                                    let textToCopy = "## Participants\n";
-                                    participants.forEach((participant) => {
-                                          textToCopy += "- " + participant.textContent + "\n";
-                                    });
-                                    navigator.clipboard.writeText(textToCopy.trim());
-                              }
-
-                              function copyContent(sectionId) {
-                                    const section = document.querySelector(`#${sectionId}`);
-                                    const sectionTitle = section.querySelector(".section-text").textContent;
-                                    const listItems = section.querySelectorAll(".output-content.message ul li");
-
-                                    let textToCopy = `${sectionTitle}\n\n`; // Bold heading with extra space for readability
-
-                                    if (listItems.length > 0) {
-                                          listItems.forEach((item) => {
-                                                textToCopy += `• ${item.textContent}\n`; // Using • for bullet points
+                              <script>
+                                    function copyParticipants(element) {
+                                          const participants = document.querySelectorAll(".participant-list .participant-name");
+                                          let textToCopy = "## Participants\n";
+                                          participants.forEach((participant) => {
+                                                textToCopy += "- " + participant.textContent + "\n";
                                           });
-                                    } else {
-                                          textToCopy += "(No content available)\n";
+                                          navigator.clipboard.writeText(textToCopy.trim()).then(() => {
+                                                const img = element.querySelector("img");
+                                                const originalSrc = img.src;
+                                                img.src = "/static/images/copy-check.svg";
+                                                setTimeout(() => {
+                                                      img.src = originalSrc;
+                                                }, 2000);
+                                          });
                                     }
+                              </script>
+                            </div>
 
-                                    navigator.clipboard
-                                          .writeText(textToCopy.trim())
-                                          .then(() => {})
-                                          .catch((err) => {
-                                                console.error("Error copying text: ", err);
-                                          });
-                              }
-                        </script>
-                  </div>
-            </div>
-            <script>
-                  const themeToggle = document.getElementById("theme-toggle");
-                  themeToggle.addEventListener("change", () => {
-                        document.body.classList.toggle("dark-theme", themeToggle.checked);
-                  });
+                            <div class="output-content message">
+                                <ul class="participant-list"></ul>
+                            </div>
+                        </div>
+
+                        <!-- Summary Section -->
+                        <div id="writeSummaryOutput" class="output-section">
+                            <div class="section-header">
+                                <div class="section-title">
+                                    <span class="section-icon">
+                                        <img class="section-icon-img" src="/static/images/notes-icon.svg" alt="Notes Icon" />
+                                    </span>
+                                    <div class="section-text">Summary</div>
+                                </div>
+                                <div class="copy-container" onclick="copyContent('writeSummaryOutput')">
+                                    <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                </div>
+                            </div>
+
+                            <div class="output-content message"></div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <!-- Meeting Notes Section -->
+                        <div id="writeNotesOutput" class="output-section">
+                            <div class="section-header">
+                                <div class="section-title">
+                                    <span class="section-icon">
+                                        <img class="section-icon-img" src="/static/images/notebook-pen.svg" alt="Notes Icon" />
+                                    </span>
+                                    <div class="section-text">Notes</div>
+                                </div>
+                                <div class="copy-container" onclick="copyContent('writeNotesOutput')">
+                                    <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                </div>
+                            </div>
+
+                            <div class="output-content message"></div>
+                        </div>
+
+                        <!-- Action Items Section -->
+                        <div id="writeActionItemsOutput" class="output-section">
+                            <div class="section-header">
+                                <div class="section-title">
+                                    <span class="section-icon">
+                                        <img class="section-icon-img" src="/static/images/list-check.svg" alt="Notes Icon" />
+                                    </span>
+                                    <div class="section-text">Action Items</div>
+                                </div>
+                                <div class="copy-container" onclick="copyContent('writeActionItemsOutput')">
+                                    <img src="/static/images/copy.svg" alt="Copy Icon" />
+                                </div>
+                            </div>
+
+                            <div class="output-content message"></div>
+                        </div>
+                    </div>
+                </div>
+
+                            <script>
+                function copyContent(sectionId) {
+                    const section = document.querySelector(`#${sectionId}`);
+                    const sectionTitle = section.querySelector(".section-text").textContent;
+                    const listItems = section.querySelectorAll(".output-content.message ul li");
+            
+                    let textToCopy = `${sectionTitle}\n\n`; // Bold heading with extra space for readability
+            
+                    if (listItems.length > 0) {
+                        listItems.forEach((item) => {
+                            textToCopy += `• ${item.textContent}\n`; // Using • for bullet points
+                        });
+                    } else {
+                        textToCopy += "(No content available)\n";
+                    }
+            
+                    navigator.clipboard
+                        .writeText(textToCopy.trim())
+                        .then(() => {
+                            const copyIcon = section.querySelector(".copy-container img");
+                            const originalSrc = copyIcon.src;
+                            copyIcon.src = "/static/images/copy-check.svg";
+                            setTimeout(() => {
+                                copyIcon.src = originalSrc;
+                            }, 2000);
+                        })
+                        .catch((err) => {
+                            console.error("Error copying text: ", err);
+                        });
+                }
             </script>
-            <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-      </body>
+            </div>
+        </div>
+        <script>
+            const themeToggle = document.getElementById("theme-toggle");
+            themeToggle.addEventListener("change", () => {
+                document.body.classList.toggle("dark-theme", themeToggle.checked);
+            });
+        </script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </body>
 </html>

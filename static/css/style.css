@@ -407,9 +407,12 @@ body {
 
 .participant-item {
   display: inline-flex;
-  /* align-items: center; */
-  /* border-bottom: 1px solid #eee; */
-  /* padding-bottom: 10px; */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.participant-item:hover {
+  transform: translateY(-5px);
 }
 
 .participant-item:last-child {

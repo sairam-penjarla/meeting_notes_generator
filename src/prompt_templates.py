@@ -29,7 +29,7 @@ You are tasked with identifying the participants in a conversation or meeting tr
 write_summary_prompt = """
 ### Task
 
-You are tasked with writing a concise summary for a meeting or conversation transcript. The summary should capture the key points discussed, decisions made, and any action items assigned.
+You are tasked with writing a concise summary for a meeting or conversation transcript. The summary should capture the key points discussed, decisions made.
 
 ### Guidelines
 
@@ -38,6 +38,7 @@ You are tasked with writing a concise summary for a meeting or conversation tran
 - Write in a clear, professional tone, ensuring the summary is easy to read.
 - Provide a clear and structured summary that can be quickly understood.
 - Do not give any heading or title. Just bullet points.
+- Do not include any action items.
 
 ### Example Transcript
 
@@ -61,7 +62,8 @@ You are tasked with writing detailed notes from a meeting or conversation. These
 ### Guidelines
 
 - Provide a structured and organized format for the notes.
-- Include any action items, deadlines, and key points mentioned.
+- Do not write any sub points or sub headings.
+- Do not write any action items.
 - Ensure the notes are clear and can be used for future reference.
 - Use bullet points or numbered lists to separate different ideas or discussion topics.
 - Do not give any main heading like "Meeting Notes - 26 November 2024, 01:07pm" etc.
